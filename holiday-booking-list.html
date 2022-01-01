@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo design</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+    integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
+
+
+  <!-- datatable -->
+  <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <main class="content">
+    <div class="sidebar">
+      <a href="javascript:;" class="text-decoration-none d-flex align-items-center s-header">
+        <img src="./assets/images/brand-circle.png" height="30" alt="" class="ps-4">
+        <!-- <img src="./assets/images/firebase_logotype_white_18dp.svg" height="18" class="ms-2" alt=""> -->
+        <span class="fs-24 text-white ms-2">GUIDEASY</span>
+      </a>
+
+      <div class="d-flex flex-column justify-content-between sidebar-menu">
+        <div class="sidebar-menu-list">
+          <div class="sidebar-items">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <a href="index.html" class="accordion-button collapsed group-list-btn">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <i class='bx bxs-dashboard fs-22 me-3'></i>
+                      </div>
+                      <div>
+                        <div>
+                          Dashboard
+                        </div>
+                        <span class="btn-sub-list">
+                          Hire Guide, Holidays, Visa Hire Guide, Holidays, Visa
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </h2>
+
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-items">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#booking" aria-expanded="false" aria-controls="booking">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <i class='bx bx-category fs-22 me-3'></i>
+                      </div>
+                      <div>
+                        <div>
+                          Bookings
+                        </div>
+                        <span class="btn-sub-list">
+                          Hire Guide, Holidays, Visa Hire Guide, Holidays, Visa
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </h2>
+                <div id="booking" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <ul class="group-list-items">
+                    <li>
+                      <a href="guide-booking-list.html" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Hire Guide</a>
+
+                    </li>
+                    <li>
+                      <a href="holiday-booking-list.html" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Holidays
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="visa-booking-list.html" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Visa
+                      </a>
+
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-items">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="false" aria-controls="profile">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <i class='bx bx-user fs-22 me-3'></i>
+                      </div>
+                      <div>
+                        <div>
+                          Profile
+                        </div>
+                        <span class="btn-sub-list">
+                          KYC, Update Profile
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </h2>
+                <div id="profile" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <ul class="group-list-items">
+                    <li>
+                      <a href="javascript:;" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        KYC Verifaction
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Update Profile
+                      </a>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-items">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#accounts" aria-expanded="false" aria-controls="accounts">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <i class='bx bx-desktop fs-22 me-3'></i>
+                      </div>
+                      <div>
+                        <div>
+                          Accounts
+                        </div>
+                        <span class="btn-sub-list">
+                          Payment, Transaction Statement
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </h2>
+                <div id="accounts" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <ul class="group-list-items">
+                    <li>
+                      <a href="javascript:;" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Hire Guide
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Holidays
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn text-start btn-sm">
+                        <i class="fas fa-chevron-right me-2"></i>
+                        Visa
+                      </a>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="javascript:;">
+            <i class='bx bx-power-off fs-22 me-3'></i>
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg header-nav">
+          <div class="navbar-header"> </div>
+          <ul class="nav header-navbar-rht">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
+                  id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="flag-icon flag-icon-bd me-2"></i>BGD | ENG | BDT
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                  <div class="language-currency-widget shadow">
+                    <div class="row g-2">
+                      <div class="col-12 service">
+
+                        <select id="country">
+                          <option value="0" data-imagesrc="./assets/flags/4x3/us.svg" data-description="">
+                            USA</option>
+                          <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg" data-description="">
+                            Bangladesh</option>
+                          <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg" data-description="">
+                            Turkey</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-2 text-success">Language</div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="lang" id="lang-1" checked>
+                          <label class="form-check-label" for="lang-1">
+                            English
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="lang" id="lang-2">
+                          <label class="form-check-label" for="lang-2">
+                            বাংলা
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-2 text-success">Currency</div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="curr" id="curr" checked>
+                          <label class="form-check-label" for="curr">
+                            BDT
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-sm m-0"> Apply </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class=" dropdown-toggle popup-btn" href="javascript:;" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bxs-grid'></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="service-widget shadow">
+                    <div class="row g-2">
+                      <div class="col-4 service">
+                        <a href="index.html">
+                          <img src="./assets/img/popupMenu/guide (1).svg" alt="">
+                          <h5>Guide</h5>
+                        </a>
+                      </div>
+                      <div class="col-4 service">
+                        <a href="holidays.html">
+                          <img src="./assets/img/popupMenu/travel.svg" alt="">
+                          <h5>Holidays</h5>
+                        </a>
+                      </div>
+                      <div class="col-4 service">
+                        <a href="visa.html">
+                          <img src="./assets/img/popupMenu/visa (1).svg" alt="">
+                          <h5>Visa</h5>
+                        </a>
+                      </div>
+                      <div class="col-4 service">
+                        <a href="javascript:;">
+                          <img src="./assets/img/popupMenu/ticket.svg" alt="">
+                          <h5>Holidays</h5>
+                        </a>
+                      </div>
+                      <div class="col-4 service">
+                        <a href="javascript:;">
+                          <img src="./assets/img/holidays.svg" alt="">
+                          <h5>Holidays</h5>
+                        </a>
+                      </div>
+                      <div class="col-4 service">
+                        <a href="javascript:;">
+                          <img src="./assets/img/holidays.svg" alt="">
+                          <h5>Holidays</h5>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class=" dropdown-toggle popup-btn" href="javascript:;" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class='bx bx-bell'></i>
+
+                  <span class="notify-count">9+</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="notifications-widget shadow">
+                    <div class="">
+                      <div class="notification-heading">
+                        <h4>Notifactions</h4>
+                      </div>
+                      <ul class="notifications">
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <!-- <i class="far fa-dot-circle"></i> -->
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>Just Now</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>Just Now</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>Just Now</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>1 minutes ago</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>2 minutes ago</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="javascript:;">
+                            <div class="notification">
+                              <div class="notice">
+                                <p>A guide added an event that might interest you.</p>
+                                <span>10 minutes ago</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="notification-footer">
+                        <a href="javascript:;">
+                          See All
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle profile-btn" href="javascript:;" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="rounded-circle" src="./assets/img/pl.png" alt="">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="menu-widget shadow">
+                    <ul class="menu-list">
+                      <li>
+                        <a class="dropdown-item" href="user-dashboard.html">
+                          <i class='bx bxs-dashboard'></i> Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="my-guide-booking-list.html">
+                          <div class="notify">
+                            <span class="heartbit"></span>
+                            <span class="point"></span>
+                          </div>
+                          <i class='bx bx-purchase-tag'></i> My Bookings
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="profile-settings.html">
+                          <div class="notify">
+                            <span class="heartbit"></span>
+                            <span class="point"></span>
+                          </div>
+                          <i class='bx bx-cog'></i> Profile Settings
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="KYC-verifaction.html">
+                          <i class='bx bx-fingerprint'></i> KYC Verification
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="review.html">
+                          <i class='bx bxs-star-half'></i> Reviews
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="payment-history.html">
+                          <i class='bx bx-movie'></i> Payment History
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="index.html">
+                          <i class='bx bx-power-off'></i> Logout
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+          <ul class="nav menu-currency">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
+                  id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="flag-icon flag-icon-bd m-1"></i>
+                  BGD | ENG | BDT
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                  <div class="language-currency-widget shadow">
+                    <div class="row g-2">
+                      <div class="col-12 service">
+
+                        <select id="country-2">
+                          <option value="0" data-imagesrc="./assets/flags/4x3/us.svg" data-description="">
+                            USA</option>
+                          <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg" data-description="">
+                            Bangladesh</option>
+                          <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg" data-description="">
+                            Turkey</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-2 text-success">Language</div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="lang-3" id="lang-3" checked>
+                          <label class="form-check-label" for="lang-3">
+                            English
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="lang-3" id="lang-4">
+                          <label class="form-check-label" for="lang-4">
+                            বাংলা
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-2 text-success">Currency</div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="curr-2" id="curr-2" checked>
+                          <label class="form-check-label" for="curr-2">
+                            BDT
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn-sm m-0"> Apply </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="dashboard-bg"></div>
+      <div class="container">
+        <div class="user-info">
+          <div class="user-img me-3">
+            <img src="./assets/images/aamroni.jpg" class="rounded-circle" alt="">
+          </div>
+          <div class="info">
+            <h3>Tanvir Mahmud</h3>
+            <div class="ps-1">
+              <p class="m-0">Member Since Oct 2021</p>
+              <p class=""><i class="fas fa-dot-circle"></i> online</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-4">
+          <div class="pb-2 display-6 fs-22 text-white">Holiday Booking List</div>
+          <div class="col-lg-12">
+            <div class="mat-card">
+              <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
+                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                <thead>
+                  <tr>
+                    <th>Sl</th>
+                    <th>Holiday Package</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                    <th>Location</th>
+                    <th>Remaning</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>
+                      <div class="d-flex align-items-center height-60">
+                        <div class="me-2">
+                          <img src="./assets/images/Discover-sajek-valley-1024x701.jpg" class="rounded" width="65"
+                            height="45" alt="">
+                        </div>
+                        <div>
+                          <div class="fs-14 fw-500">Al Mamun Rony</div>
+                          <div class="fs-12">Processing</div>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        ৳ 80000
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14">
+                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
+                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14 text-muted">
+                        Rajshahi-1356, Bangladesh
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        <i class='bx bxs-alarm bx-tada me-1 text-primary' ></i> <span>00:00:00</span> 
+                      </div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-map-marker-alt"></i></button>
+                     
+                      <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                        Details</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="d-flex align-items-center height-60">
+                        <div class="me-2">
+                          <img src="./assets/images/blog-post-2.jpg" class="rounded" width="65" height="45" alt="">
+                        </div>
+                        <div>
+                          <div class="fs-14 fw-500">Al Mamun Rony</div>
+                          <div class="fs-12">Processing</div>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        ৳ 80000
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14">
+                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
+                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14 text-muted">
+                        Rajshahi-1356, Bangladesh
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        -
+                      </div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-map-marker-alt"></i></button>
+                     
+                      <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                        Details</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>
+                      <div class="d-flex align-items-center height-60">
+                        <div class="me-2">
+                          <img src="./assets/images/banner-img-turkey.jpg" class="rounded" width="65" height="45" alt="">
+                        </div>
+                        <div>
+                          <div class="fs-14 fw-500">Al Mamun Rony</div>
+                          <div class="fs-12">Processing</div>
+                        </div>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        ৳ 80000
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14">
+                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
+                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-14 text-muted">
+                        Rajshahi-1356, Bangladesh
+                      </div>
+                    </td>
+                    <td>
+                      <div class="fs-16 fw-500">
+                        <i class='bx bxs-alarm bx-tada me-1 text-primary' ></i> <span>00:00:00</span> 
+                      </div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-map-marker-alt"></i></button>
+                     
+                      <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                        Details</button>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="footer">
+
+    </div>
+    </div>
+  </main>
+
+
+
+  <!-- Bootstrap Core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/dist/boxicons.js"
+    integrity="sha512-TfrFu3iAKkx00YukHa2DTu6ymMjxsPNtGFRUpZojq777TtAGanCNEwLUtoaVPH6aDZQMm0v4HuGrjkM/iGSNHw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
+  </script>
+
+  <!-- datatable -->
+  <script src="./assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+  <script src="./assets/plugins/datatable/js/dataTables.bootstrap4.min.js"></script>
+  <script src="./assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+  <script src="./assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+  <script src="./assets/plugins/datatable/js/jszip.min.js"></script>
+  <script src="./assets/plugins/datatable/js/pdfmake.min.js"></script>
+  <script src="./assets/plugins/datatable/js/vfs_fonts.js"></script>
+  <script src="./assets/plugins/datatable/js/buttons.html5.min.js"></script>
+  <script src="./assets/plugins/datatable/js/buttons.print.min.js"></script>
+  <script src="./assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+  <script src="./assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+  <script src="./assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+
+  <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js">
+  </script> -->
+
+  <script src="./assets/js/app.js"></script>
+
+  <script>
+    // $(document).ready(function () {
+    //   $('#table_id').DataTable();
+    // });
+  </script>
+
+</body>
+
+</html>

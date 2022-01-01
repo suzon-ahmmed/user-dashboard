@@ -17,6 +17,14 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
+
+
+   <!-- datatable -->
+   <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
+   <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
    <!-- jQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -40,7 +48,7 @@
                   <div class="accordion" id="accordionExample">
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                           <a href="index.html" class="accordion-button collapsed group-list-btn" >
+                           <a href="index.html" class="accordion-button collapsed group-list-btn">
                               <div class="d-flex align-items-center">
                                  <div>
                                     <i class='bx bxs-dashboard fs-22 me-3'></i>
@@ -92,14 +100,14 @@
 
                               </li>
                               <li>
-                                 <a href="holiday-booking-list.html" class="btn text-start  btn-sm">
+                                 <a href="holiday-booking-list.html" class="btn text-start btn-sm">
                                     <i class="fas fa-chevron-right me-2"></i>
                                     Holidays
                                  </a>
 
                               </li>
                               <li>
-                                 <a href="visa-booking-list.html" class="btn text-start  btn-sm">
+                                 <a href="visa-booking-list.html" class="btn text-start btn-sm">
                                     <i class="fas fa-chevron-right me-2"></i>
                                     Visa
                                  </a>
@@ -137,7 +145,7 @@
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
-                                 <a href="javascript:;" class="btn text-start  btn-sm">
+                                 <a href="javascript:;" class="btn text-start btn-sm">
                                     <i class="fas fa-chevron-right me-2"></i>
                                     KYC Verifaction
                                  </a>
@@ -547,56 +555,144 @@
                   </div>
                </div>
             </div>
-            <div class="dashboard-summary p-4 mb-5">
-               <div class="mat-card">
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div class="d-flex mb-3">
-                           <div class="flex-grow-1">
-                              <h5 class="mb-1 text-muted">Booking Statics</h5>
-                           </div>
-                        </div>
-                        <div id="chart"></div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="row g-2">
-                           <div class="col-lg-4">
-                              <div class="card shadow-sm rounded">
-                                 <div class="card-body p-2">
-                                    <div class="text-muted fs-14">Guide Booking</div>
-                                    <h4 class="pt-2 text-success">+100</h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card shadow-sm rounded">
-                                 <div class="card-body p-2">
-                                    <div class="text-muted fs-14">Holiday Booking</div>
-                                    <h4 class="pt-2 text-success">+100</h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card shadow-sm rounded">
-                                 <div class="card-body p-2">
-                                    <div class="text-muted fs-14">Visa Booking</div>
-                                    <h4 class="pt-2 text-success">+100</h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4">
-                              <div class="card shadow-sm rounded">
-                                 <div class="card-body p-2">
-                                    <div class="text-muted fs-14">More Services</div>
-                                    <h4 class="pt-2 text-success">+100</h4>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
 
-                     </div>
+            <div class="row p-4">
+               <div class="pb-2 display-6 fs-22 text-white">Visa Booking List</div>
+               <div class="col-lg-12">
+                  <div class="mat-card">
+                     <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
+                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                        <thead>
+                           <tr>
+                              <th>Sl</th>
+                              <th>Visa</th>
+                              <th>Service Charge</th>
+                              <th>Total Person</th>
+                              <th>Net Cost</th>
+                              <th>Action</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                             <td>01</td>
+                             <td>
+                               <div class="d-flex align-items-center height-60">
+                                 <div class="me-2">
+                                   <img src="./assets/images/Discover-sajek-valley-1024x701.jpg" class="rounded" width="65"
+                                     height="45" alt="">
+                                 </div>
+                                 <div>
+                                   <div class="fs-14 fw-500">Turkey</div>
+                                   <div class="fs-12 rounded-pill bg-primary bg-opacity-25 text-primary text-center px-2">Processing</div>
+                                 </div>
+         
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14 fw-500">
+                                 ৳ 80000
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14">
+                                 1 Person
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-16">
+                                 ৳ 80000
+                               </div>
+                             </td>
+                     
+                             <td>
+                               <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-phone"></i></button>
+                              
+                               <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                                 Details</button>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td>02</td>
+                             <td>
+                               <div class="d-flex align-items-center height-60">
+                                 <div class="me-2">
+                                   <img src="./assets/images/blog-post-2.jpg" class="rounded" width="65" height="45" alt="">
+                                 </div>
+                                 <div>
+                                   <div class="fs-14 fw-500">India</div>
+                                   <div class="fs-12 rounded-pill bg-danger bg-opacity-25 text-danger text-center px-2">Processing</div>
+                                 </div>
+         
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14 fw-500">
+                                 ৳ 8000
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14">
+                                1 Person
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-16 ">
+                                 ৳ 8000
+                               </div>
+                             </td>
+                             
+                             <td>
+                               <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-phone"></i></button>
+                              
+                               <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                                 Details</button>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td>03</td>
+                             <td>
+                               <div class="d-flex align-items-center height-60">
+                                 <div class="me-2">
+                                   <img src="./assets/images/banner-img-turkey.jpg" class="rounded" width="65" height="45" alt="">
+                                 </div>
+                                 <div>
+                                   <div class="fs-14 fw-500">Bangladesh</div>
+                                   <div class="fs-12 rounded-pill bg-success bg-opacity-25 text-success text-center px-2">Processing</div>
+                                 </div>
+         
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14 fw-500">
+                                 ৳ 80000
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-14">
+                                 1 Person
+                               </div>
+                             </td>
+                             <td>
+                               <div class="fs-16 ">
+                                 ৳ 80000
+                               </div>
+                             </td>
+                            
+                             <td>
+                               <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-phone"></i></button>
+                              
+                               <button type="button" class="btn btn-dark  shadow btn-sm"> 
+                                 Details</button>
+                             </td>
+                           </tr>
+         
+         
+                         </tbody>
+                     </table>
+
                   </div>
                </div>
+
             </div>
 
 
@@ -620,76 +716,33 @@
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
    </script>
-   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+   <!-- datatable -->
+   <script src="./assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+   <script src="./assets/plugins/datatable/js/dataTables.bootstrap4.min.js"></script>
+   <script src="./assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+   <script src="./assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+   <script src="./assets/plugins/datatable/js/jszip.min.js"></script>
+   <script src="./assets/plugins/datatable/js/pdfmake.min.js"></script>
+   <script src="./assets/plugins/datatable/js/vfs_fonts.js"></script>
+   <script src="./assets/plugins/datatable/js/buttons.html5.min.js"></script>
+   <script src="./assets/plugins/datatable/js/buttons.print.min.js"></script>
+   <script src="./assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+   <script src="./assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+   <script src="./assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+
+   <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js">
+  </script> -->
+
+   <script src="./assets/js/app.js"></script>
 
    <script>
-      var options = {
-         chart: {
-            type: 'area',
-            height: '235',
-         },
-         stroke: {
-            curve: 'smooth',
-         },
-
-         series: [{
-            name: 'sales',
-            data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
-         }],
-         xaxis: {
-            categories: [03, 06, 09, 12, 15, 18, 21, 24, 27]
-         }
-      }
-
-      var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-      chart.render();
-      var cardActionRunning = false;
-      var handleCardAction = function () {
-         "use strict";
-
-         if (cardActionRunning) {
-            return false;
-         }
-         cardActionRunning = true;
-
-         // expand
-         $(document).on('mouseover', '[data-toggle=card-expand]', function (e) {
-            if (!$(this).attr('data-init')) {
-               $(this).tooltip({
-                  title: 'Expand / Compress',
-                  placement: 'bottom',
-                  trigger: 'hover',
-                  container: 'body'
-               });
-               $(this).tooltip('show');
-               $(this).attr('data-init', true);
-            }
-         });
-         $(document).on('click', '[data-toggle=card-expand]', function (e) {
-            e.preventDefault();
-            var target = $(this).closest('.card');
-            var targetBody = $(target).find('.card-body');
-            var targetClass = 'card-expand';
-            var targetTop = 40;
-            if ($(targetBody).length !== 0) {
-               var targetOffsetTop = $(target).offset().top;
-               var targetBodyOffsetTop = $(targetBody).offset().top;
-               targetTop = targetBodyOffsetTop - targetOffsetTop;
-            }
-
-            if ($('body').hasClass(targetClass) && $(target).hasClass(targetClass)) {
-               $('body, .card').removeClass(targetClass);
-               $('.card').removeAttr('style');
-               $(targetBody).removeAttr('style');
-            } else {
-               $('body').addClass(targetClass);
-               $(this).closest('.card').addClass(targetClass);
-            }
-            $(window).trigger('resize');
-         });
-      };
+      // $(document).ready(function () {
+      //   $('#table_id').DataTable();
+      // });
    </script>
+
 </body>
 
 </html>
