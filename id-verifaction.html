@@ -18,13 +18,6 @@
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
-
-
-   <!-- datatable -->
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
    <!-- jQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -73,7 +66,7 @@
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                            <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#booking" aria-expanded="true"
+                              data-bs-toggle="collapse" data-bs-target="#booking" aria-expanded="false"
                               aria-controls="booking">
                               <div class="d-flex align-items-center">
                                  <div>
@@ -90,7 +83,7 @@
                               </div>
                            </a>
                         </h2>
-                        <div id="booking" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        <div id="booking" class="accordion-collapse collapse" aria-labelledby="headingThree"
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
@@ -124,7 +117,7 @@
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                            <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="false"
+                              data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="true"
                               aria-controls="profile">
                               <div class="d-flex align-items-center">
                                  <div>
@@ -141,7 +134,7 @@
                               </div>
                            </a>
                         </h2>
-                        <div id="profile" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="profile" class="accordion-collapse collapse show" aria-labelledby="headingThree"
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
@@ -548,117 +541,171 @@
             </div>
 
             <div class="row p-4">
-               <div class="pb-2 display-6 fs-22 text-white">Guide Booking List</div>
-               <div class="col-lg-12">
-                  <div class="mat-card">
-                     <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
-                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                        <thead>
-                           <tr>
-                              <th>Sl</th>
-                              <th>Hire Guide</th>
-                              <th>Price</th>
-                              <th>Duration</th>
-                              <th>Location</th>
-                              <th>Date Modified</th>
-                              <th>Action</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>01</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
+               <div class="pb-2 display-6 fs-22 text-white">KYC Verification Details</div>
+               <div class="mat-card">
+                  <form action="">
+                     <div class="alert alert-white alert-dismissible fade show shadow-sm text-danger fs-16"
+                        role="alert">
+                        <i class="far fa-bell"></i> * to hire a tour guide and another service, please verify yourself
+                        and get all services 4x faster.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                     </div>
+
+                     <div class="row g-3">
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <select class="form-select m-0" id="floatingSelect"
+                                 aria-label="Floating label select example">
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">Bangladesh</option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">Turkey
+                                 </option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">India
+                                 </option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">United States of
+                                    America
+                                 </option>
+                              </select>
+                              <label for="floatingSelect">Select Country</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <select class="form-select m-0" id="floatingSelect"
+                                 aria-label="Floating label select example">
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">National ID Card
+                                    (NID)</option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">Birth Certificate
+                                 </option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">Passport
+                                 </option>
+                                 <option value="" data-icon="fas fa-flag" data-text=" " data-abbr="">Driving License
+                                 </option>
+                              </select>
+                              <label for="floatingSelect">Select ID type</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" value="" id="floatingCupon" require
+                                 placeholder="place">
+                              <label for="floatingCupon">Certificate No</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="floatingCupon" require
+                                 placeholder="place">
+                              <label for="floatingCupon">State or Province</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="floatingCupon" require
+                                 placeholder="place">
+                              <label for="floatingCupon">City</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="floatingCupon" require
+                                 placeholder="place">
+                              <label for="floatingCupon">ZIP Code (optional)</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="border rounded py-2 px-3">
+                              <div class="row align-items-center">
+                                 <div class="col-lg-4">
+                                    <div>
+                                       <span class="fw-bold">Filename:</span> <span>Front part of NID</span>
                                     </div>
                                     <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
-                                    </div>
-
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> Details</button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>02</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
+                                       <span class="fw-bold">Status:</span> <span>Pending</span>
                                     </div>
                                     <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
+                                       <span class="fw-bold">Date Modified:</span> <span>Thu 12 Jan 2021</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+
+                                    <img src="./assets/images/front-of-nid.jpg" class="border border-success border-1" width="auto" height="122"
+                                       alt="">
+
+                                 </div>
+                                 <div class="col-lg-2">
+                                    <div>
+                                       <label class="btn file-input-btn">
+                                          <i class="fas fa-cloud-upload-alt"></i> Front of NID
+                                          <input type="file" class="form-control" id="uploadFile" name="logo"
+                                             accept="image/png, image/svg, image/jpg, image/jpeg" />
+                                       </label>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="border rounded py-2 px-3">
+                              <div class="row align-items-center">
+                                 <div class="col-lg-4">
+                                    <div>
+                                       <span class="fw-bold">Filename:</span> <span>-</span>
+                                    </div>
+                                    <div>
+                                       <span class="fw-bold">Status:</span> <span>-</span>
+                                    </div>
+                                    <div>
+                                       <span class="fw-bold">Date Modified:</span> <span>-</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+
+                                    <div>
+                                       No file uplodes.
                                     </div>
 
                                  </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
+                                 <div class="col-lg-2">
+                                    <div>
+                                       <label class="btn file-input-btn">
+                                          <i class="fas fa-cloud-upload-alt"></i> Back of NID
+                                          <input type="file" class="form-control" id="uploadFile" name="logo"
+                                             accept="image/png, image/svg, image/jpg, image/jpeg" />
+                                       </label>
+                                    </div>
                                  </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm">Details</button>
-                              </td>
-                           </tr>
+
+                              </div>
+                           </div>
+                        </div>
+                       
+                        <div class="col-lg-12">
+                           <div class="form-floating form-floating-md">
+                              <textarea class="form-control" id="floatingTextarea2" placeholder="place"
+                                 style="height: 78px"></textarea>
+                              <label for="floatingTextarea2">Note</label>
+                           </div>
+                        </div>
 
 
-                        </tbody>
-                     </table>
+                        <div class="">
+                           <button type="submit" class="btn btn-block btn-success">Confirm and Submit</button>
+                        </div>
 
-                  </div>
+
+
+                     </div>
+                  </form>
+
                </div>
-
             </div>
 
 
          </div>
+
+
+      </div>
 
       </div>
       <div class="footer">
@@ -679,31 +726,9 @@
    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
    </script>
 
-   <!-- datatable -->
-   <script src="./assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/jszip.min.js"></script>
-   <script src="./assets/plugins/datatable/js/pdfmake.min.js"></script>
-   <script src="./assets/plugins/datatable/js/vfs_fonts.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.html5.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.print.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
-   <script src="./assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
 
 
-   <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js">
-  </script> -->
 
-   <script src="./assets/js/app.js"></script>
-
-   <script>
-      // $(document).ready(function () {
-      //   $('#table_id').DataTable();
-      // });
-   </script>
 
 </body>
 

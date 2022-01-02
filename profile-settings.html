@@ -18,13 +18,6 @@
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
-
-
-   <!-- datatable -->
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
    <!-- jQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -73,7 +66,7 @@
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                            <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#booking" aria-expanded="true"
+                              data-bs-toggle="collapse" data-bs-target="#booking" aria-expanded="false"
                               aria-controls="booking">
                               <div class="d-flex align-items-center">
                                  <div>
@@ -90,7 +83,7 @@
                               </div>
                            </a>
                         </h2>
-                        <div id="booking" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        <div id="booking" class="accordion-collapse collapse" aria-labelledby="headingThree"
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
@@ -124,7 +117,7 @@
                      <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                            <a href="javascript:;" class="accordion-button collapsed group-list-btn" type="button"
-                              data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="false"
+                              data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="true"
                               aria-controls="profile">
                               <div class="d-flex align-items-center">
                                  <div>
@@ -141,7 +134,7 @@
                               </div>
                            </a>
                         </h2>
-                        <div id="profile" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        <div id="profile" class="accordion-collapse collapse show" aria-labelledby="headingThree"
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
@@ -548,117 +541,171 @@
             </div>
 
             <div class="row p-4">
-               <div class="pb-2 display-6 fs-22 text-white">Guide Booking List</div>
-               <div class="col-lg-12">
-                  <div class="mat-card">
-                     <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
-                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                        <thead>
-                           <tr>
-                              <th>Sl</th>
-                              <th>Hire Guide</th>
-                              <th>Price</th>
-                              <th>Duration</th>
-                              <th>Location</th>
-                              <th>Date Modified</th>
-                              <th>Action</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>01</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
-                                    </div>
-                                    <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
-                                    </div>
+               <div class="pb-2 display-6 fs-22 text-white">Profile Settings</div>
+               <div class="mat-card">
+                  <div class="pb-3 display-6 fs-22 fw-400 text-muted">Basic Information</div>
+                  <form action="">
+                     <div class="row g-3">
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" value="" id="" require placeholder="place">
+                              <label for="floatingCupon">first Name</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Last Name</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Mobile Number</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Email</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Date Of Barth</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="radio-lable">
+                              <label class="g-label">Gender </label>
+                              <div class="check">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio"
+                                          name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label"
+                                          for="flexRadioDefault1"> Male </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio"
+                                          name="flexRadioDefault" id="flexRadioDefault2">
+                                      <label class="form-check-label"
+                                          for="flexRadioDefault2"> Female </label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio"
+                                          name="flexRadioDefault" id="flexRadioDefault3">
+                                      <label class="form-check-label"
+                                          for="flexRadioDefault3"> Other </label>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div>
+                              <label class="btn file-input-btn">
+                                 <i class="fas fa-cloud-upload-alt"></i> Upload Profile Image
+                                 <input type="file" class="form-control" id="uploadFile" name="logo"
+                                    accept="image/png, image/svg, image/jpg, image/jpeg" />
+                              </label>
+                           </div>
+                        </div>
+                       
+                        <div class="">
+                           <button type="submit" class="btn btn-block btn-success">Confirm and Submit</button>
+                        </div>
+                     </div>
+                  </form>
 
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> Details</button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>02</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
-                                    </div>
-                                    <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
-                                    </div>
-
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm">Details</button>
-                              </td>
-                           </tr>
-
-
-                        </tbody>
-                     </table>
-
-                  </div>
                </div>
-
             </div>
 
+            <div class="row p-4">
+               <div class="mat-card">
+                  <div class="pb-3 display-6 fs-22 fw-400 text-muted">Address Details </div>    
+                  <form action="">
+                     <div class="row g-3">         
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Country</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">State</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">City</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Zip Code</label>
+                           </div>
+                        </div>
+                        <div class="col-lg-8">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" value="" id="" require placeholder="place">
+                              <label for="floatingCupon">Address</label>
+                           </div>
+                        </div>
+                        <div class="">
+                           <button type="submit" class="btn btn-block btn-success">Confirm and Submit</button>
+                        </div>
+                     </div>
+                  </form>
+
+               </div>
+            </div>
+            <div class="row p-4">
+               <div class="mat-card">
+                  <div class="pb-3 display-6 fs-22 fw-400 text-muted">Credential </div>
+                  <form action="">
+                     <div class="row g-3">
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" value="" id="" require placeholder="place">
+                              <label for="floatingCupon">Current Password</label>
+                              <button class="password-hidden"><i class="fas fa-eye-slash text-muted"></i></button>
+                           </div>
+                        </div>
+                        <div class="col-lg-8"></div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">New Password</label>
+                              <button class="password-hidden"><i class="fas fa-eye-slash text-muted"></i></button>
+                           </div>
+                        </div>
+
+                        <div class="col-lg-8"></div>
+                        <div class="col-lg-4">
+                           <div class="form-floating form-floating-md ">
+                              <input type="text" class="form-control m-0" id="" require placeholder="place">
+                              <label for="floatingCupon">Confirm Password</label>
+                              <button class="password-hidden"><i class="fas fa-eye-slash text-muted"></i></button>
+                           </div>
+                        </div>
+                       
+                        <div class="">
+                           <button type="submit" class="btn btn-block btn-success">Confirm and Submit</button>
+                        </div>
+                     </div>
+                  </form>
+
+               </div>
+            </div>
 
          </div>
+
+
+      </div>
 
       </div>
       <div class="footer">
@@ -679,31 +726,9 @@
    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
    </script>
 
-   <!-- datatable -->
-   <script src="./assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/jszip.min.js"></script>
-   <script src="./assets/plugins/datatable/js/pdfmake.min.js"></script>
-   <script src="./assets/plugins/datatable/js/vfs_fonts.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.html5.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.print.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
-   <script src="./assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
 
 
-   <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js">
-  </script> -->
 
-   <script src="./assets/js/app.js"></script>
-
-   <script>
-      // $(document).ready(function () {
-      //   $('#table_id').DataTable();
-      // });
-   </script>
 
 </body>
 

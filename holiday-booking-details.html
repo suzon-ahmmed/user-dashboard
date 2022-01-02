@@ -18,10 +18,6 @@
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
-
-
    <!-- datatable -->
    <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
    <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
@@ -189,18 +185,18 @@
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
-                                <a href="payment-history.html" class="btn text-start btn-sm">
-                                  <i class="fas fa-chevron-right me-2"></i>
-                                  Transaction Statement
-                               </a>
+                                 <a href="payment-history.html" class="btn text-start btn-sm">
+                                    <i class="fas fa-chevron-right me-2"></i>
+                                    Transaction Statement
+                                 </a>
                               </li>
                               <li>
-                                <a href="javascript:;" class="btn text-start btn-sm">
-                                  <i class="fas fa-chevron-right me-2"></i>
-                                  Bank Details
-                                </a>
+                                 <a href="javascript:;" class="btn text-start btn-sm">
+                                    <i class="fas fa-chevron-right me-2"></i>
+                                    Bank Details
+                                 </a>
                               </li>
-                            </ul>
+                           </ul>
                         </div>
                      </div>
                   </div>
@@ -548,109 +544,300 @@
             </div>
 
             <div class="row p-4">
-               <div class="pb-2 display-6 fs-22 text-white">Guide Booking List</div>
+               <div class="pb-2 display-6 fs-22 text-white">Holiday Booking Details</div>
                <div class="col-lg-12">
-                  <div class="mat-card">
-                     <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
-                        style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                        <thead>
-                           <tr>
-                              <th>Sl</th>
-                              <th>Hire Guide</th>
-                              <th>Price</th>
-                              <th>Duration</th>
-                              <th>Location</th>
-                              <th>Date Modified</th>
-                              <th>Action</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>01</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
+                  <div class="mat-card p-0">
+                     <div class="holiday-booking-detials">
+                        <div class="d-flex align-items-start">
+                           <div class="">
+                              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                 aria-orientation="vertical">
+                                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">
+                                    <div class="d-flex align-items-center">
+                                       <div class="btn-icon me-2">
+                                          <i class="fas fa-bus"></i>
+                                       </div>
+                                       <div>
+                                          <div class="fw-500">Transportation Details</div>
+                                          <div class="fs-14">Sub title</div>
+                                       </div>
                                     </div>
-                                    <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
+                                 </button>
+                                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                    aria-controls="v-pills-profile" aria-selected="false">
+                                    <div class="d-flex align-items-center">
+                                       <div class="btn-icon me-2">
+                                          <i class="fas fa-bed"></i>
+                                       </div>
+                                       <div>
+                                          <div class="fw-500">Accommodation Details</div>
+                                          <div class="fs-14">Sub title</div>
+                                       </div>
+                                    </div>
+                                 </button>
+                                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                    aria-controls="v-pills-messages" aria-selected="false">
+                                    <div class="d-flex align-items-center">
+                                       <div class="btn-icon me-2">
+                                          <i class="fas fa-sun"></i>
+                                       </div>
+                                       <div>
+                                          <div class="fw-500">Day 1 Details</div>
+                                          <div class="fs-14">Sub title</div>
+                                       </div>
+                                    </div>
+                                 </button>
+                                 <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                    aria-controls="v-pills-settings" aria-selected="false">
+                                    <div class="d-flex align-items-center">
+                                       <div class="btn-icon me-2">
+                                          <i class="fas fa-sun"></i>
+                                       </div>
+                                       <div>
+                                          <div class="fw-500">Day 2 Details</div>
+                                          <div class="fs-14">Sub title</div>
+                                       </div>
+                                    </div>
+                                 </button>
+                              </div>
+                           </div>
+
+                           <div class="tab-content p-3 border-start" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                 aria-labelledby="v-pills-home-tab">
+                                 <div class="">
+                                    <div class="d-flex justify-content-between pb-2">
+                                       <p>Start Trip <i class="fas fa-long-arrow-alt-right"></i></p>
+                                       <p>Ticket No: PNR1245-58854</p>
+                                    </div>
+                                    <div class="">
+                                       <table class="table table-striped table-hover">
+                                          <tbody>
+                                             <tr>
+                                                <td>Passanger:</td>
+                                                <td>Tanvir Mahmud</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Bus Name:</td>
+                                                <td>Saintmartin Travels</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Bus No:</td>
+                                                <td>DHK-0212450</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Seat No:</td>
+                                                <td>B3</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Date:</td>
+                                                <td>15-01-2022</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Time:</td>
+                                                <td>10:20 PM</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Boarding:</td>
+                                                <td>Gabtoli 06 Counter, Dhaka</td>
+                                             </tr>
+                                             <tr>
+                                                <td>Drop-off:</td>
+                                                <td>Kolatoli Beach Point, Cox’s Bazar</td>
+                                             </tr>
+
+                                          </tbody>
+                                       </table>
+
                                     </div>
 
                                  </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> Details</button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>02</td>
-                              <td>
-                                 <div class="d-flex align-items-center height-60">
-                                    <div class="me-2">
-                                       <img src="./assets/images/aamroni.jpg" class="rounded-circle" width="45"
-                                          height="45" alt="">
-                                    </div>
-                                    <div>
-                                       <div class="fs-14 fw-500">Al Mamun Rony</div>
-                                       <div class="fs-12">Processing</div>
-                                    </div>
-
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-16 fw-500">
-                                    ৳ 80000
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    6 hours
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    Rajshahi-1356, Bangladesh
-                                 </div>
-                              </td>
-                              <td>
-                                 <div class="fs-14 text-muted">
-                                    2022/01/01
-                                 </div>
-                              </td>
-                              <td>
-                                 <button type="button" class="btn btn-dark shadow btn-sm"> <i
-                                       class="fas fa-phone"></i></button>
-                                 <button type="button" class="btn btn-dark shadow btn-sm">Details</button>
-                              </td>
-                           </tr>
-
-
-                        </tbody>
-                     </table>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                 aria-labelledby="v-pills-profile-tab">
+                                 <table class="table table-striped table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th>TO-DO List</th>
+                                          <th>Place</th>
+                                          <th>Timing</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Breakfast</td>
+                                          <td>At Hotel</td>
+                                          <td>07:00am-10:00am</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Hotel Check-in</td>
+                                          <td>The Long Beach</td>
+                                          <td>12:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Launch</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>01:00pm-03:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bed</td>
+                                          <td>At Beach (1-hour)</td>
+                                          <td>01:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bike ATV</td>
+                                          <td>At Beach (1-ride)</td>
+                                          <td>03:00pm-05:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Photoshoot</td>
+                                          <td>At Beach (20pc)</td>
+                                          <td>04:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Fish BBQ</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>06:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Romantic Dinner</td>
+                                          <td>Marmeid Cafe</td>
+                                          <td>09:00pm-11:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Live Concert</td>
+                                          <td>Music Cafe</td>
+                                          <td>10:00pm-12:00am</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                 aria-labelledby="v-pills-messages-tab">
+                                 <table class="table table-striped table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th>TO-DO List</th>
+                                          <th>Place</th>
+                                          <th>Timing</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Breakfast</td>
+                                          <td>At Hotel</td>
+                                          <td>07:00am-10:00am</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Hotel Check-in</td>
+                                          <td>The Long Beach</td>
+                                          <td>12:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Launch</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>01:00pm-03:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bed</td>
+                                          <td>At Beach (1-hour)</td>
+                                          <td>01:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bike ATV</td>
+                                          <td>At Beach (1-ride)</td>
+                                          <td>03:00pm-05:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Photoshoot</td>
+                                          <td>At Beach (20pc)</td>
+                                          <td>04:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Fish BBQ</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>06:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Romantic Dinner</td>
+                                          <td>Marmeid Cafe</td>
+                                          <td>09:00pm-11:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Live Concert</td>
+                                          <td>Music Cafe</td>
+                                          <td>10:00pm-12:00am</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                 aria-labelledby="v-pills-settings-tab">
+                                 <table class="table table-striped table-hover">
+                                    <thead>
+                                       <tr>
+                                          <th>TO-DO List</th>
+                                          <th>Place</th>
+                                          <th>Timing</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Breakfast</td>
+                                          <td>At Hotel</td>
+                                          <td>07:00am-10:00am</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Hotel Check-in</td>
+                                          <td>The Long Beach</td>
+                                          <td>12:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Launch</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>01:00pm-03:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bed</td>
+                                          <td>At Beach (1-hour)</td>
+                                          <td>01:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Beach Bike ATV</td>
+                                          <td>At Beach (1-ride)</td>
+                                          <td>03:00pm-05:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Photoshoot</td>
+                                          <td>At Beach (20pc)</td>
+                                          <td>04:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Fish BBQ</td>
+                                          <td>Chef’s Dine</td>
+                                          <td>06:00pm-07:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Romantic Dinner</td>
+                                          <td>Marmeid Cafe</td>
+                                          <td>09:00pm-11:00pm</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Live Concert</td>
+                                          <td>Music Cafe</td>
+                                          <td>10:00pm-12:00am</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
 
                   </div>
                </div>

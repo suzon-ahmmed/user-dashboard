@@ -89,14 +89,14 @@
                     </div>
                   </a>
                 </h2>
-                <div id="booking" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                <div id="booking" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <ul class="group-list-items">
                     <li>
                       <a href="guide-booking-list.html" class="btn text-start btn-sm">
                         <i class="fas fa-chevron-right me-2"></i>
-                        Hire Guide</a>
-
+                        Hire Guide
+                      </a>
                     </li>
                     <li>
                       <a href="holiday-booking-list.html" class="btn text-start btn-sm">
@@ -182,14 +182,14 @@
                     </div>
                   </a>
                 </h2>
-                <div id="accounts" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                <div id="accounts" class="accordion-collapse collapse show" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <ul class="group-list-items">
                     <li>
                       <a href="payment-history.html" class="btn text-start btn-sm">
                         <i class="fas fa-chevron-right me-2"></i>
                         Transaction Statement
-                     </a>
+                      </a>
                     </li>
                     <li>
                       <a href="javascript:;" class="btn text-start btn-sm">
@@ -545,7 +545,7 @@
         </div>
 
         <div class="row p-4">
-          <div class="pb-2 display-6 fs-22 text-white">Holiday Booking List</div>
+          <div class="pb-2 display-6 fs-22 text-white">Transaction Statement</div>
           <div class="col-lg-12">
             <div class="mat-card">
               <table id="datatable-buttons" class="table table-sm dt-responsive nowrap table-hover"
@@ -553,142 +553,111 @@
                 <thead>
                   <tr>
                     <th>Sl</th>
-                    <th>Holiday Package</th>
-                    <th>Price</th>
-                    <th>Duration</th>
-                    <th>Location</th>
-                    <th>Remaning</th>
-                    <th>Action</th>
+                    <th>Transaction Id</th>
+                    <th>Date</th>
+                    <th>Reason</th>
+                    <th>Amount</th>
+                    <th>Payment Type</th>
+                    <th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>01</td>
                     <td>
-                      <div class="d-flex align-items-center height-60">
-                        <div class="me-2">
-                          <img src="./assets/images/Discover-sajek-valley-1024x701.jpg" class="rounded" width="65"
-                            height="45" alt="">
-                        </div>
-                        <div>
-                          <div class="fs-14 fw-500">Al Mamun Rony</div>
-                          <div class="fs-12">Processing</div>
-                        </div>
+                      <div>#254544</div>
 
+                    </td>
+                    <td>
+                      <div class="">
+                        21-05-21
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        ৳ 80000
+                      <div class="">
+                        Tour Package
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14">
-                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
-                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      <div class="">
+                        9500
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14 text-muted">
-                        Rajshahi-1356, Bangladesh
+                      <div class="">
+                        Card
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        <i class='bx bxs-alarm bx-tada me-1 text-primary' ></i> <span>00:00:00</span> 
+                      <div class="text-danger">
+                        Cancelled
                       </div>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-map-marker-alt"></i></button>
-                     
-                      <button type="button" class="btn btn-dark  shadow btn-sm" onclick="location.href='holiday-booking-details.html';"> 
-                        Details</button>
                     </td>
                   </tr>
                   <tr>
                     <td>02</td>
                     <td>
-                      <div class="d-flex align-items-center height-60">
-                        <div class="me-2">
-                          <img src="./assets/images/blog-post-2.jpg" class="rounded" width="65" height="45" alt="">
-                        </div>
-                        <div>
-                          <div class="fs-14 fw-500">Al Mamun Rony</div>
-                          <div class="fs-12">Processing</div>
-                        </div>
-
+                      <div>#254545</div>
+                    </td>
+                    <td>
+                      <div class="">
+                        21-05-21
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        ৳ 80000
+                      <div class="">
+                        Tour Package
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14">
-                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
-                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      <div class="">
+                        9500
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14 text-muted">
-                        Rajshahi-1356, Bangladesh
+                      <div class="">
+                        bkash
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        -
+                      <div class="text-base">
+                        Success
                       </div>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-dark shadow btn-sm"> <i class="fas fa-map-marker-alt"></i></button>
-                     
-                      <button type="button" class="btn btn-dark  shadow btn-sm" onclick="location.href='holiday-booking-details.html';"> 
-                        Details</button>
                     </td>
                   </tr>
                   <tr>
                     <td>03</td>
                     <td>
-                      <div class="d-flex align-items-center height-60">
-                        <div class="me-2">
-                          <img src="./assets/images/banner-img-turkey.jpg" class="rounded" width="65" height="45" alt="">
-                        </div>
-                        <div>
-                          <div class="fs-14 fw-500">Al Mamun Rony</div>
-                          <div class="fs-12">Processing</div>
-                        </div>
+                      <div>#254546</div>
 
+                    </td>
+                    <td>
+                      <div class="">
+                        21-05-21
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        ৳ 80000
+                      <div class="">
+                        Guide Booking
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14">
-                        <div><i class="fas fa-sun me-2 text-warning"></i> 3D </div>
-                        <div><i class="fas fa-moon me-2 text-dark"></i> 4N</div>
+                      <div class="">
+                       4000
                       </div>
                     </td>
                     <td>
-                      <div class="fs-14 text-muted">
-                        Rajshahi-1356, Bangladesh
+                      <div class="">
+                        Card
                       </div>
                     </td>
                     <td>
-                      <div class="fs-16 fw-500">
-                        <i class='bx bxs-alarm bx-tada me-1 text-primary' ></i> <span>00:00:00</span> 
+                      <div class="text-base">
+                        Success
                       </div>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-dark shadow btn-sm" > <i class="fas fa-map-marker-alt"></i></button>
-                     
-                      <button type="button" class="btn btn-dark  shadow btn-sm" onclick="location.href='holiday-booking-details.html';"> 
-                        Details</button>
                     </td>
                   </tr>
+
 
 
                 </tbody>
