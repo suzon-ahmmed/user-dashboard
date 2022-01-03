@@ -18,9 +18,8 @@
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <!-- datatable -->
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/dataTables.bootstrap4.min.css" />
-   <link rel="stylesheet" href="./assets/plugins/datatable/css/responsive.bootstrap4.min.css" />
+   <link rel="stylesheet" href="./assets/css/flag-icon.min.css">
+
    <!-- jQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -218,56 +217,58 @@
                <ul class="nav header-navbar-rht">
                   <li class="nav-item">
                      <div class="dropdown">
-                        <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
-                           id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
-                           <i class="flag-icon flag-icon-bd me-2"></i>BGD | ENG | BDT
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                           <div class="language-currency-widget shadow">
-                              <div class="row g-2">
-                                 <div class="col-12 service">
+                         <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
+                             id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                             <i class="flag-icon flag-icon-bd me-2"></i>BGD | ENG | BDT
+                         </a>
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                             <div class="language-currency-widget shadow-p">
+                                 <div class="row g-2">
+                                     <div class="col-12 service">
 
-                                    <select id="country">
-                                       <option value="0" data-imagesrc="./assets/flags/4x3/us.svg" data-description="">
-                                          USA</option>
-                                       <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg" data-description="">
-                                          Bangladesh</option>
-                                       <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg" data-description="">
-                                          Turkey</option>
-                                    </select>
+                                         <select id="country">
+                                             <option value="0" data-imagesrc="./assets/flags/4x3/us.svg"
+                                                 data-description="">USA</option>
+                                             <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg"
+                                                 data-description="">Bangladesh</option>
+                                             <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg"
+                                                 data-description="">Turkey</option>
+                                         </select>
+                                     </div>
+                                     <div class="col-6">
+                                         <div class="mb-2 text-success">Language</div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" name="lang" id="lang-1"
+                                                 checked>
+                                             <label class="form-check-label" for="lang-1">
+                                                 English
+                                             </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" name="lang" id="lang-2">
+                                             <label class="form-check-label" for="lang-2">
+                                                 বাংলা
+                                             </label>
+                                         </div>
+                                     </div>
+                                     <div class="col-6">
+                                         <div class="mb-2 text-success">Currency</div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" name="curr" id="curr"
+                                                 checked>
+                                             <label class="form-check-label" for="curr">
+                                                 BDT
+                                             </label>
+                                         </div>
+                                     </div>
+                                     <div class="d-grid">
+                                         <button type="button" class="btn btn-base btn-sm m-0"> Apply </button>
+                                     </div>
                                  </div>
-                                 <div class="col-6">
-                                    <div class="mb-2 text-success">Language</div>
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="radio" name="lang" id="lang-1" checked>
-                                       <label class="form-check-label" for="lang-1">
-                                          English
-                                       </label>
-                                    </div>
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="radio" name="lang" id="lang-2">
-                                       <label class="form-check-label" for="lang-2">
-                                          বাংলা
-                                       </label>
-                                    </div>
-                                 </div>
-                                 <div class="col-6">
-                                    <div class="mb-2 text-success">Currency</div>
-                                    <div class="form-check">
-                                       <input class="form-check-input" type="radio" name="curr" id="curr" checked>
-                                       <label class="form-check-label" for="curr">
-                                          BDT
-                                       </label>
-                                    </div>
-                                 </div>
-                                 <div class="d-grid">
-                                    <button type="button" class="btn btn-primary btn-sm m-0"> Apply </button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                             </div>
+                         </div>
                      </div>
-                  </li>
+                 </li>
                   <li class="nav-item">
                      <div class="dropdown">
                         <a class=" dropdown-toggle popup-btn" href="javascript:;" role="button" id="dropdownMenuLink"
@@ -279,40 +280,23 @@
                               <div class="row g-2">
                                  <div class="col-4 service">
                                     <a href="index.html">
-                                       <img src="./assets/img/popupMenu/guide (1).svg" alt="">
+                                       <img src="./assets/images/svg-icon/hire-guide.svg" alt="">
                                        <h5>Guide</h5>
                                     </a>
                                  </div>
                                  <div class="col-4 service">
                                     <a href="holidays.html">
-                                       <img src="./assets/img/popupMenu/travel.svg" alt="">
+                                       <img src="./assets/images/svg-icon/holiday.svg" alt="">
                                        <h5>Holidays</h5>
                                     </a>
                                  </div>
                                  <div class="col-4 service">
                                     <a href="visa.html">
-                                       <img src="./assets/img/popupMenu/visa (1).svg" alt="">
+                                       <img src="./assets/images/svg-icon/visa.svg" alt="">
                                        <h5>Visa</h5>
                                     </a>
                                  </div>
-                                 <div class="col-4 service">
-                                    <a href="javascript:;">
-                                       <img src="./assets/img/popupMenu/ticket.svg" alt="">
-                                       <h5>Holidays</h5>
-                                    </a>
-                                 </div>
-                                 <div class="col-4 service">
-                                    <a href="javascript:;">
-                                       <img src="./assets/img/holidays.svg" alt="">
-                                       <h5>Holidays</h5>
-                                    </a>
-                                 </div>
-                                 <div class="col-4 service">
-                                    <a href="javascript:;">
-                                       <img src="./assets/img/holidays.svg" alt="">
-                                       <h5>Holidays</h5>
-                                    </a>
-                                 </div>
+
 
                               </div>
                            </div>
@@ -413,7 +397,7 @@
                      <div class="dropdown">
                         <a class="dropdown-toggle profile-btn" href="javascript:;" role="button" id="dropdownMenuLink"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                           <img class="rounded-circle" src="./assets/img/pl.png" alt="">
+                           <img class="rounded-circle" src="./assets/images/aamroni.jpg" alt="">
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                            <div class="menu-widget shadow">
@@ -425,19 +409,13 @@
                                  </li>
                                  <li>
                                     <a class="dropdown-item" href="my-guide-booking-list.html">
-                                       <div class="notify">
-                                          <span class="heartbit"></span>
-                                          <span class="point"></span>
-                                       </div>
+                                     
                                        <i class='bx bx-purchase-tag'></i> My Bookings
                                     </a>
                                  </li>
                                  <li>
                                     <a class="dropdown-item" href="profile-settings.html">
-                                       <div class="notify">
-                                          <span class="heartbit"></span>
-                                          <span class="point"></span>
-                                       </div>
+                                       
                                        <i class='bx bx-cog'></i> Profile Settings
                                     </a>
                                  </li>
@@ -517,7 +495,7 @@
                                     </div>
                                  </div>
                                  <div class="d-grid">
-                                    <button type="button" class="btn btn-primary btn-sm m-0"> Apply </button>
+                                    <button type="button" class="btn btn-base btn-sm m-0"> Apply </button>
                                  </div>
                               </div>
                            </div>
@@ -557,11 +535,11 @@
                                     aria-selected="true">
                                     <div class="d-flex align-items-center">
                                        <div class="btn-icon me-2">
-                                          <i class="fas fa-bus"></i>
+                                          <i class='fas fa-road'></i>
                                        </div>
                                        <div>
-                                          <div class="fw-500">Transportation Details</div>
-                                          <div class="fs-14">Sub title</div>
+                                          <div class="fw-500">Transportation </div>
+                                          <div class="fs-14">Vehicle Details</div>
                                        </div>
                                     </div>
                                  </button>
@@ -573,8 +551,8 @@
                                           <i class="fas fa-bed"></i>
                                        </div>
                                        <div>
-                                          <div class="fw-500">Accommodation Details</div>
-                                          <div class="fs-14">Sub title</div>
+                                          <div class="fw-500">Accommodation </div>
+                                          <div class="fs-14">Hotel or Resort Details</div>
                                        </div>
                                     </div>
                                  </button>
@@ -583,11 +561,12 @@
                                     aria-controls="v-pills-messages" aria-selected="false">
                                     <div class="d-flex align-items-center">
                                        <div class="btn-icon me-2">
-                                          <i class="fas fa-sun"></i>
+                                          <i class="fas fa-hourglass-half"></i>
+                                          <!-- <i class="fas fa-cloud-sun"></i> -->
                                        </div>
                                        <div>
-                                          <div class="fw-500">Day 1 Details</div>
-                                          <div class="fs-14">Sub title</div>
+                                          <div class="fw-500">Day 1 Estimation</div>
+                                          <div class="fs-14">Planing Details</div>
                                        </div>
                                     </div>
                                  </button>
@@ -596,11 +575,11 @@
                                     aria-controls="v-pills-settings" aria-selected="false">
                                     <div class="d-flex align-items-center">
                                        <div class="btn-icon me-2">
-                                          <i class="fas fa-sun"></i>
+                                          <i class="fas fa-hourglass-half"></i>
                                        </div>
                                        <div>
-                                          <div class="fw-500">Day 2 Details</div>
-                                          <div class="fs-14">Sub title</div>
+                                          <div class="fw-500">Day 2 Estimation </div>
+                                          <div class="fs-14">Planing Details</div>
                                        </div>
                                     </div>
                                  </button>
@@ -838,13 +817,9 @@
                            </div>
                         </div>
                      </div>
-
                   </div>
                </div>
-
             </div>
-
-
          </div>
 
       </div>
@@ -860,29 +835,13 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
    </script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
+   </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/dist/boxicons.js"
       integrity="sha512-TfrFu3iAKkx00YukHa2DTu6ymMjxsPNtGFRUpZojq777TtAGanCNEwLUtoaVPH6aDZQMm0v4HuGrjkM/iGSNHw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js">
-   </script>
+  
 
-   <!-- datatable -->
-   <script src="./assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
-   <script src="./assets/plugins/datatable/js/jszip.min.js"></script>
-   <script src="./assets/plugins/datatable/js/pdfmake.min.js"></script>
-   <script src="./assets/plugins/datatable/js/vfs_fonts.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.html5.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.print.min.js"></script>
-   <script src="./assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-   <script src="./assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
-   <script src="./assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
-
-
-   <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js">
-  </script> -->
 
    <script src="./assets/js/app.js"></script>
 
