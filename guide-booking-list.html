@@ -17,6 +17,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
       integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./assets/css/flag-icon.min.css">
 
 
    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"> -->
@@ -189,18 +190,18 @@
                            data-bs-parent="#accordionExample">
                            <ul class="group-list-items">
                               <li>
-                                <a href="payment-history.html" class="btn text-start btn-sm">
-                                  <i class="fas fa-chevron-right me-2"></i>
-                                  Transaction Statement
-                               </a>
+                                 <a href="payment-history.html" class="btn text-start btn-sm">
+                                    <i class="fas fa-chevron-right me-2"></i>
+                                    Transaction Statement
+                                 </a>
                               </li>
                               <li>
-                                <a href="javascript:;" class="btn text-start btn-sm">
-                                  <i class="fas fa-chevron-right me-2"></i>
-                                  Bank Details
-                                </a>
+                                 <a href="javascript:;" class="btn text-start btn-sm">
+                                    <i class="fas fa-chevron-right me-2"></i>
+                                    Bank Details
+                                 </a>
                               </li>
-                            </ul>
+                           </ul>
                         </div>
                      </div>
                   </div>
@@ -222,58 +223,56 @@
                <ul class="nav header-navbar-rht">
                   <li class="nav-item">
                      <div class="dropdown">
-                         <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
-                             id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
-                             <i class="flag-icon flag-icon-bd me-2"></i>BGD | ENG | BDT
-                         </a>
-                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                             <div class="language-currency-widget shadow-p">
-                                 <div class="row g-2">
-                                     <div class="col-12 service">
+                        <a class="dropdown-toggle language-currency-btn" href="javascript:;" role="button"
+                           id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
+                           <i class="flag-icon flag-icon-bd me-2"></i>BGD | ENG | BDT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                           <div class="language-currency-widget shadow-p">
+                              <div class="row g-2">
+                                 <div class="col-12 service">
 
-                                         <select id="country">
-                                             <option value="0" data-imagesrc="./assets/flags/4x3/us.svg"
-                                                 data-description="">USA</option>
-                                             <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg"
-                                                 data-description="">Bangladesh</option>
-                                             <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg"
-                                                 data-description="">Turkey</option>
-                                         </select>
-                                     </div>
-                                     <div class="col-6">
-                                         <div class="mb-2 text-success">Language</div>
-                                         <div class="form-check">
-                                             <input class="form-check-input" type="radio" name="lang" id="lang-1"
-                                                 checked>
-                                             <label class="form-check-label" for="lang-1">
-                                                 English
-                                             </label>
-                                         </div>
-                                         <div class="form-check">
-                                             <input class="form-check-input" type="radio" name="lang" id="lang-2">
-                                             <label class="form-check-label" for="lang-2">
-                                                 বাংলা
-                                             </label>
-                                         </div>
-                                     </div>
-                                     <div class="col-6">
-                                         <div class="mb-2 text-success">Currency</div>
-                                         <div class="form-check">
-                                             <input class="form-check-input" type="radio" name="curr" id="curr"
-                                                 checked>
-                                             <label class="form-check-label" for="curr">
-                                                 BDT
-                                             </label>
-                                         </div>
-                                     </div>
-                                     <div class="d-grid">
-                                         <button type="button" class="btn btn-base btn-sm m-0"> Apply </button>
-                                     </div>
+                                    <select id="country">
+                                       <option value="0" data-imagesrc="./assets/flags/4x3/us.svg" data-description="">
+                                          USA</option>
+                                       <option value="1" data-imagesrc="./assets/flags/4x3/bd.svg" data-description="">
+                                          Bangladesh</option>
+                                       <option value="2" data-imagesrc="./assets/flags/4x3/tr.svg" data-description="">
+                                          Turkey</option>
+                                    </select>
                                  </div>
-                             </div>
-                         </div>
+                                 <div class="col-6">
+                                    <div class="mb-2 text-success">Language</div>
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="lang" id="lang-1" checked>
+                                       <label class="form-check-label" for="lang-1">
+                                          English
+                                       </label>
+                                    </div>
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="lang" id="lang-2">
+                                       <label class="form-check-label" for="lang-2">
+                                          বাংলা
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="col-6">
+                                    <div class="mb-2 text-success">Currency</div>
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="curr" id="curr" checked>
+                                       <label class="form-check-label" for="curr">
+                                          BDT
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="d-grid">
+                                    <button type="button" class="btn btn-base btn-sm m-0"> Apply </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
-                 </li>
+                  </li>
                   <li class="nav-item">
                      <div class="dropdown">
                         <a class=" dropdown-toggle popup-btn" href="javascript:;" role="button" id="dropdownMenuLink"
@@ -414,13 +413,13 @@
                                  </li>
                                  <li>
                                     <a class="dropdown-item" href="my-guide-booking-list.html">
-                                     
+
                                        <i class='bx bx-purchase-tag'></i> My Bookings
                                     </a>
                                  </li>
                                  <li>
                                     <a class="dropdown-item" href="profile-settings.html">
-                                       
+
                                        <i class='bx bx-cog'></i> Profile Settings
                                     </a>
                                  </li>
